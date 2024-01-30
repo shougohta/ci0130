@@ -45,7 +45,7 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - say-hello3
+      - say-hello3:
           requires:
             - say-hello
       - say-hello2:
