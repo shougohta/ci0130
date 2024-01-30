@@ -25,8 +25,8 @@ jobs:
       - attach_workspace:
           at: /tmp/workspace
       - run:
-          name: "Say hello"
-          command: "ls /tmp/workspace/file.txt"
+          command:
+            echo "私は'$CI'だ"
   say-hello3:
     docker:
       - image: cimg/base:stable
